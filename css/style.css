@@ -1,0 +1,29 @@
+@font-face {
+    font-family: LexendMega;
+    src: url(../fonts/LexendMega-Regular.ttf);
+}
+body{
+    font-family: LexendMega;
+    width: 100%;
+}
+.containerbutton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+    background-color: green;
+    width: 100%;
+    height: 100%;
+}
+main{
+    
+    align-items: center;
+    justify-content: center;
+}
