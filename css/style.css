@@ -65,7 +65,9 @@ main {
   border: #a2cb87 solid 1px; }
 
 #insertform {
-  border: 1px solid black; }
+  border: 1px solid #a2cb87;
+  margin-left: 19.5%;
+  margin-right: 19.5%; }
 
 #searchsection {
   display: flex;
