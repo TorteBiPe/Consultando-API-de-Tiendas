@@ -27,19 +27,19 @@ main{
 
     
 }
-#containerbutton button{
+.buttonstyle{
     border-radius: 5px;
     border-color: green;
     background-color: rgb(213,236,197);
     width: 15em;
     color: rgb(63,111,60);
 }
-#containerbutton button:hover{
+.buttonstyle{
 
     background-color:rgb(189,225,166) ;
 
 }
-#containerbutton button:active{
+.buttonstyle{
 
     background-color:rgb(84,140,47) ;
     color: rgb(162,203,135);

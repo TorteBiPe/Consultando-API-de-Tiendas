@@ -1,102 +1,70 @@
 @font-face {
   font-family: LexendMega;
-  src: url(../fonts/LexendMega-Regular.ttf);
-}
+  src: url(../fonts/LexendMega-Regular.ttf); }
 
 body {
   font-family: LexendMega;
-  width: 100%;
-}
+  width: 100%; }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: orange;
   background-color: green;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: green;
-}
+  flex-direction: column;
+  justify-content: center;
+  color: green; }
 
 #containerbutton div {
-  display: -ms-grid;
   display: grid;
-  grid-row: 1fr 1fr 1fr;
-}
+  grid-row: 1fr 1fr 1fr; }
 
-#containerbutton button {
+.buttonstyle {
   border-radius: 5px;
   border-color: green;
   background-color: #d5ecc5;
   width: 15em;
-  color: #3f6f3c;
-}
+  color: #3f6f3c; }
 
-#containerbutton button:hover {
-  background-color: #bde1a6;
-}
+.buttonstyle {
+  background-color: #bde1a6; }
 
-#containerbutton button:active {
+.buttonstyle {
   background-color: #548c2f;
-  color: #a2cb87;
-}
+  color: #a2cb87; }
 
 #notsearch {
-  display: none;
-}
+  display: none; }
 
 #insertform {
-  border: 1px solid black;
-}
+  border: 1px solid black; }
 
 #searchsection {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 1%;
-}
+  justify-content: space-around;
+  margin-top: 1%; }
 
 #buttonnew {
   border-radius: 5px;
   border-color: green;
   background-color: #d5ecc5;
   width: 15em;
-  color: #3f6f3c;
-}
+  color: #3f6f3c; }
 
 .shop {
   border: 2px solid black;
-  margin-top: 1%;
-}
+  margin-top: 1%; }
 
 #formwrapper {
   height: 0;
   overflow: hidden;
-  -webkit-transition: height 500ms;
-  transition: height 500ms;
-}
+  transition: height 500ms; }
 
 .loader {
   display: inline-block;
@@ -106,31 +74,13 @@ main {
   width: 1.5rem;
   height: 1.5rem;
   background-color: transparent;
-  -webkit-animation: spin 1.5s linear infinite;
-          animation: spin 1.5s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
+  animation: spin 1.5s linear infinite; }
 
 @keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
+    transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
+    transform: rotate(360deg); } }
 
 /*#containerbutton{
     position: fixed;
@@ -141,4 +91,3 @@ main {
     height: 100vh;
     background-color: aliceblue;
 }*/
-/*# sourceMappingURL=style.css.map */
