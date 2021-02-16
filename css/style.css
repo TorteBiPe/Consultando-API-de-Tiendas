@@ -1,16 +1,23 @@
 @font-face {
-  font-family: "LexendMega";
-  src: url("../fonts/LexendMega-Regular.ttf");
+  font-family: LexendMega;
+  src: url(../fonts/LexendMega-Regular.ttf);
 }
+
 body {
   font-family: LexendMega;
   width: 100%;
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: orange;
   background-color: green;
   width: 100%;
@@ -18,14 +25,21 @@ header {
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: green;
 }
 
 .containerbutton {
+  display: -ms-grid;
   display: grid;
   grid-row: 1fr 1fr 1fr;
 }
@@ -38,8 +52,72 @@ main {
   color: #3f6f3c;
 }
 
+.containerbutton button:hover {
+  background-color: #bde1a6;
+}
+
 .containerbutton button:active {
+  background-color: #548c2f;
   color: #a2cb87;
 }
 
+#searchsection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#formwrapper {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 500ms;
+  transition: height 500ms;
+}
+
+.loader {
+  display: inline-block;
+  border: 3px solid black;
+  border-radius: 50%;
+  border-left-color: transparent;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*#containerbutton{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}*/
 /*# sourceMappingURL=style.css.map */
