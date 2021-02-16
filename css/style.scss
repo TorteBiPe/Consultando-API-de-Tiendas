@@ -44,10 +44,21 @@ main{
     color: rgb(162,203,135);
 
 }
+
+#insertform{
+    border: 1px solid black;
+}
+
 #searchsection{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 1%;
 }
+.shop{
+    border:2px solid black;
+    margin-top: 1%;
+}
+
 #formwrapper{
     height: 0;
     overflow: hidden;

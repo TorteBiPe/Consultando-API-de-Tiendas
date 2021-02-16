@@ -49,12 +49,10 @@ function showShops(shops){
     shops.forEach(shop => {
         let container =template.content.cloneNode(true);
         container.querySelector(".name").textContent = shop.nombreTienda
+        container.querySelector(".addres").textContent = `${shop.direccion} (${shop.localidad})`
         container.querySelector(".phone").textContent = shop.telefono
-        container.querySelector(".addres").textContent = shop.direccion
-        container.querySelector(".location").textContent = shop.localidad
         shopcontainer.appendChild(container);
     });
-
 }
 
 function clearElement(element){
