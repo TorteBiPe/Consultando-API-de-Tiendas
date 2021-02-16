@@ -11,6 +11,7 @@ let insertform = document.getElementById("insertform");
 let buttonnew = document.getElementById("buttonnew")
 let shopcontainer = document.getElementById("shopcontainer");
 
+
 buttonXHR.addEventListener("click",loadService);
 buttonFetch.addEventListener("click",loadService);
 buttonJQuery.addEventListener("click",loadService);
@@ -71,7 +72,7 @@ async function searchShop(event){
     }
     else{
         showShops([]);
-        alert("No se a encontrado la tienda")
+        document.querySelector("#notsearch").style.display = null;
     }
 }
 

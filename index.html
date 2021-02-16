@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividad AJAX</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 
@@ -15,55 +16,65 @@
         <h1>Tiendas</h1>
     </header>
     <main>
-        <div id="searchsection" style="display: none;">
-            <button type="button" id="buttonnew">Nueva Tienda</button>
-            <form id="searchform">
-                <input type="text">
-                <button type="submit">Buscar</button>
-            </form>
-        </div>
-
-        <div id="formwrapper">
-            <form id="insertform">
-                <div class="field">
-                    <label>Nombre:</label>
-                    <input name="nombreTienda" type="text">
+        <div id="buttons">
+            <div id="containerbutton">
+                <h3>Elige el metodo para realizar AJAX</h3>
+                <div id="buttons">
+                    <button id="buttonXHR" value="XHRService">XHR</button>
+                    <button id="buttonFetch" value="FetchService">Fetch</button>
+                    <button id="buttonJQuery" value="JQueryService">JQuery</button>
                 </div>
-                <div class="field">
-                    <label>Dirección:</label>
-                    <input name="direccion" type="text">
-                </div>
-                <div class="field">
-                    <label>Localidad:</label>
-                    <input name="localidad" type="text">
-                </div>
-                <div class="field">
-                    <label>Teléfono:</label>
-                    <input name="telefono" type="text">
-                </div>
-                <button type="submit">Insertar</button>
-            </form>
-        </div>
 
-
-        <div id="containerbutton">
-            <h3>Elige el metodo para realizar AJAX</h3>
-            <button id="buttonXHR" value="XHRService">XHR</button>
-            <button id="buttonFetch" value="FetchService">Fetch</button>
-            <button id="buttonJQuery" value="JQueryService">JQuery</button>
-        </div>
-
-        <div id="shopcontainer">
-
-        </div>
-        <template id="shopstemplate">
-            <div class="shop">
-                <h2 class="name"></h2>
-                <p class="addres"></p>
-                <p class="phone"></p>
             </div>
-        </template>
+
+        </div>
+
+        <div id="containershops">
+            <div id="searchsection" style="display: none;">
+                <button type="button" id="buttonnew">Nueva Tienda</button>
+                <form id="searchform">
+                    <input type="text">
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+
+            <div id="formwrapper">
+                <form id="insertform">
+                    <div class="field">
+                        <label>Nombre:</label>
+                        <input name="nombreTienda" type="text">
+                    </div>
+                    <div class="field">
+                        <label>Dirección:</label>
+                        <input name="direccion" type="text">
+                    </div>
+                    <div class="field">
+                        <label>Localidad:</label>
+                        <input name="localidad" type="text">
+                    </div>
+                    <div class="field">
+                        <label>Teléfono:</label>
+                        <input name="telefono" type="text">
+                    </div>
+                    <button type="submit">Insertar</button>
+                </form>
+            </div>
+
+            <div id="shopcontainer">
+
+            </div>
+            <template id="shopstemplate">
+                <h2 id="notsearch" >No se ha encontrado la tienda</h3>
+                <div class="shop">
+                    <h2 class="name"></h2>
+                    <p class="addres"></p>
+                    <p class="phone"></p>
+                </div>
+            </template>
+        </div>
+
     </main>
+    <script src="https://use.fontawesome.com/d9e0bc52cc.js"></script>
     <script src="./js/script.js" type="module"></script>
 </body>
 
